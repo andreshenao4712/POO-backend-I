@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+  <diagram name="UML Profesional - Veterinaria" id="0">
+    <mxGraphModel dx="1090" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" value="&lt;b&gt;Animal&lt;/b&gt; &lt;hr&gt; - especie: String&lt;br&gt; - raza: String&lt;br&gt; - edad: int&lt;br&gt; - idDueño: int &lt;hr&gt; + Animal(especie:String, raza:String, edad:int, idDueño:int)&lt;br&gt; + Animal()&lt;br&gt; + getEspecie(): String&lt;br&gt; + setEspecie(String): void&lt;br&gt; + getRaza(): String&lt;br&gt; + setRaza(String): void&lt;br&gt; + getEdad(): int&lt;br&gt; + setEdad(int): void&lt;br&gt; + getIdDueño(): int&lt;br&gt; + setIdDueño(int): void" vertex="1">
+          <mxGeometry height="320" width="350" x="200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" value="&lt;b&gt;Veterinaria&lt;/b&gt; &lt;hr&gt; - animales: ArrayList&lt;Animal&gt; &lt;hr&gt; + Veterinaria()&lt;br&gt; + Veterinaria(animales:ArrayList&lt;Animal&gt;)&lt;br&gt; + setAnimales(ArrayList&lt;Animal&gt;): void&lt;br&gt; + agregarAnimal(animal:Animal): void&lt;br&gt; + mostrarAnimales(): void" vertex="1">
+          <mxGeometry height="250" width="380" x="700" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" value="&lt;b&gt;App&lt;/b&gt; &lt;hr&gt; + main(String[]): void" vertex="1">
+          <mxGeometry height="140" width="300" x="450" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="5" edge="1" parent="1" source="3" style="startArrow=diamond;startFill=1;endArrow=none;strokeWidth=2;" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;" value="1" vertex="1">
+          <mxGeometry height="20" width="30" x="660" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;" value="1..*" vertex="1">
+          <mxGeometry height="20" width="50" x="560" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="4" style="dashed=1;endArrow=open;strokeWidth=2;" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
